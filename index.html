@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شاشة الباسورد -->
+    <div class="password-screen" id="passwordScreen">
+
+        <h1>🎀 رسالة خاصة ليكي 🎀</h1>
+
+        <input type="password" id="passwordInput" placeholder="اكتبي الباسورد">
+
+        <button onclick="checkPassword()">دخول 💕</button>
+
+    </div>
+
+
+    <!-- محتوى الموقع -->
+    <div class="main-content" id="mainContent">
+
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+
+        <div class="content">
+
+            <h1 class="title">Happy Birthday Lulu 💖</h1>
+
+            <p class="message">
+                احلى هابي بيرث داي لأجمل وألطف بنوته في الدنيا كلها 💕<br>
+                كل سنه وانتي طيبه يعيوني وكل سنه وانتي معايا وقريبالي دايمًا ✨<br>
+                وجودك في حياتي نعمة بجد… وضحكتك لوحدها بتغير يوم كامل عندي 🌸<br>
+                مهما كتبت مش هعرف اوصف انتي عاملة ايه جوا قلبي ❤️
+            </p>
+
+
+            <!-- الصور -->
+            <div class="gallery">
+
+                <img src="photo1.jpg" class="photo">
+                <img src="photo2.jpg" class="photo">
+                <img src="photo3.jpg" class="photo">
+                <img src="photo4.jpg" class="photo">
+                <img src="photo5.jpg" class="photo">
+
+            </div>
+
+
+            <!-- زر الفويس -->
+            <button class="voice-btn" onclick="playVoice()">
+                💌 دوسي هنا
+            </button>
+
+
+            <div class="love-box">
+                <h2>حاجات بحبها فيكي 💕</h2>
+
+                <p id="changingText">ضحكتك ✨</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- الأغنية -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+
+    <!-- الضحكة -->
+    <audio id="bgLaugh" loop>
+        <source src="laugh.mp3" type="audio/mp3">
+    </audio>
+
+
+    <!-- الفويس -->
+    <audio id="voiceNote">
+        <source src="goodmorning.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

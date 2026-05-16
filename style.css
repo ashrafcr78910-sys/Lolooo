@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+    background:black;
+    color:white;
+}
+
+.bg-video{
+    position:fixed;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    top:0;
+    left:0;
+    z-index:-2;
+}
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+.password-screen{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    z-index:999;
+}
+
+.password-screen h1{
+    color:#ffb6d9;
+}
+
+.password-screen input{
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    width:250px;
+    text-align:center;
+    font-size:18px;
+}
+
+.password-screen button{
+    padding:12px 30px;
+    border:none;
+    border-radius:15px;
+    background:#ff4fa3;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.main-content{
+    display:none;
+    min-height:100vh;
+    padding:50px 20px;
+}
+
+.content{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.title{
+    font-size:50px;
+    margin-bottom:25px;
+    color:#ffd4e8;
+    text-shadow:0 0 20px rgba(255,255,255,0.6);
+}
+
+.message{
+    font-size:22px;
+    line-height:2;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:25px;
+    backdrop-filter:blur(8px);
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.photo{
+    width:220px;
+    height:300px;
+    object-fit:cover;
+    border-radius:25px;
+    transition:0.4s;
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+.photo:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+
+.voice-btn{
+    margin-top:40px;
+    padding:18px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff4fa3;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.voice-btn:hover{
+    transform:scale(1.08);
+}
+
+.love-box{
+    margin-top:50px;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+}
+
+.love-box h2{
+    margin-bottom:20px;
+    color:#ffd4e8;
+}
+
+#changingText{
+    font-size:28px;
+    transition:0.4s;
+}
+
+@media(max-width:768px){
+
+    .title{
+        font-size:36px;
+    }
+
+    .message{
+        font-size:18px;
+    }
+
+    .photo{
+        width:160px;
+        height:220px;
+    }
+}
